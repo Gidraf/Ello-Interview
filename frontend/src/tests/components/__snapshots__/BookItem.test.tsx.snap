@@ -1,0 +1,81 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`BookItem Component should match the snapshot when book is in the reading list 1`] = `
+<DocumentFragment>
+  <div
+    class="MuiPaper-root MuiPaper-elevation MuiPaper-rounded MuiPaper-elevation1 MuiCard-root css-bhp9pd-MuiPaper-root-MuiCard-root"
+    style="margin-bottom: 16px;"
+  >
+    <div
+      class="MuiCardMedia-root css-1999db7-MuiCardMedia-root"
+      role="img"
+      style="background-image: url(image10.webp);"
+      title="green iguana"
+    />
+    <div
+      class="MuiCardContent-root css-46bh2p-MuiCardContent-root"
+    >
+      <h5
+        class="MuiTypography-root MuiTypography-h5 css-ag7rrr-MuiTypography-root"
+      >
+        Test Book
+      </h5>
+      <h6
+        class="MuiTypography-root MuiTypography-subtitle1 css-10wpov9-MuiTypography-root"
+      >
+        Test Author
+      </h6>
+      <button
+        class="MuiButtonBase-root MuiButton-root MuiButton-contained MuiButton-containedSecondary MuiButton-sizeMedium MuiButton-containedSizeMedium MuiButton-colorSecondary MuiButton-root MuiButton-contained MuiButton-containedSecondary MuiButton-sizeMedium MuiButton-containedSizeMedium MuiButton-colorSecondary css-zcbmsk-MuiButtonBase-root-MuiButton-root"
+        tabindex="0"
+        type="button"
+      >
+        Remove
+        <span
+          class="MuiTouchRipple-root css-8je8zh-MuiTouchRipple-root"
+        />
+      </button>
+    </div>
+  </div>
+</DocumentFragment>
+`;
+
+exports[`BookItem Component should match the snapshot when book is not in the reading list 1`] = `
+<DocumentFragment>
+  <div
+    class="MuiPaper-root MuiPaper-elevation MuiPaper-rounded MuiPaper-elevation1 MuiCard-root css-bhp9pd-MuiPaper-root-MuiCard-root"
+    style="margin-bottom: 16px;"
+  >
+    <div
+      class="MuiCardMedia-root css-1999db7-MuiCardMedia-root"
+      role="img"
+      style="background-image: url(image10.webp);"
+      title="green iguana"
+    />
+    <div
+      class="MuiCardContent-root css-46bh2p-MuiCardContent-root"
+    >
+      <h5
+        class="MuiTypography-root MuiTypography-h5 css-ag7rrr-MuiTypography-root"
+      >
+        Test Book
+      </h5>
+      <h6
+        class="MuiTypography-root MuiTypography-subtitle1 css-10wpov9-MuiTypography-root"
+      >
+        Test Author
+      </h6>
+      <button
+        class="MuiButtonBase-root MuiButton-root MuiButton-contained MuiButton-containedPrimary MuiButton-sizeMedium MuiButton-containedSizeMedium MuiButton-colorPrimary MuiButton-root MuiButton-contained MuiButton-containedPrimary MuiButton-sizeMedium MuiButton-containedSizeMedium MuiButton-colorPrimary css-sghohy-MuiButtonBase-root-MuiButton-root"
+        tabindex="0"
+        type="button"
+      >
+        Add to Reading List
+        <span
+          class="MuiTouchRipple-root css-8je8zh-MuiTouchRipple-root"
+        />
+      </button>
+    </div>
+  </div>
+</DocumentFragment>
+`;
