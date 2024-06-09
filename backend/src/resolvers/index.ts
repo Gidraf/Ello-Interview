@@ -29,7 +29,7 @@ const writeReadingList = (readingList: object) => {
 export const resolvers = {
   Query: {
     books: () => booksData,
-    readingList: () => { const data = readReadingList(); console.log(data); return data;},
+    readingList: () => { const data = readReadingList(); return data;},
     searchBooks: ({ query }: { query: string }) => {
       return booksData.filter(
         book =>
@@ -40,7 +40,6 @@ export const resolvers = {
   },
   Mutation: {
     addBookToReadingList: (_:string, title:{title:string}) => {
-      console.log(title.title);
       const bookToAdd = booksData.find(book => book.title === title.title);
       if (!bookToAdd) throw new Error('Book not found');
 
@@ -51,15 +50,14 @@ export const resolvers = {
       return bookToAdd;
     },
     removeBookFromReadingList: (_:string,{ title }: { title: string }) => {
-      console.log(title);
+     
       const readingList = readReadingList();
       const bookToRemove = readingList[title];
-      if (!bookToRemove) {console.log(bookToRemove); throw new Error('Book not found in reading list');}
+      if (!bookToRemove) {throw new Error('Book not found in reading list');}
       
-      console.log(bookToRemove);
+      
       delete readingList[title];
 
-      console.log(readingList);
       writeReadingList(readingList);
 
       return bookToRemove;
